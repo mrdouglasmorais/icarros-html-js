@@ -13,7 +13,7 @@ html {
   background-color: rgb(240, 240, 240);
 }
 
-h1, h2, h3, h4, h5, h6, p, span, a {
+h1, h2, h3, h4, h5, h6, p, span, a, label {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -73,6 +73,82 @@ h1, h2, h3, h4, h5, h6, p, span, a {
 
 .p50{
   padding: 50px;
+}
+
+/* style form */
+.section_contact {
+  width: 100%;
+}
+.section_contact div {
+  max-width: 750px;
+  padding: 16px 50px;
+  text-align: center;
+}
+form {
+  max-width: 550px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #F4F7F8;
+  border-radius: 8px;
+}
+h3 {
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+input,
+textarea {
+  background: rgba(246, 201, 255, 0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  width: 100%;
+  padding: 15px 0;
+  width: 100%;
+  background: #2655cd10;
+  color: #2654CD;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  margin-bottom: 30px;
+}
+button {
+  cursor: pointer;
+  padding: 16px 32px;
+  color: #fff;
+  background: #2655cdb7;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #2654CD;
+  border-width: 1px 1px 3px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+button:hover {
+  opacity: 0.8;
+}
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+/* loader */
+.loader_active{
+  z-index: 5;
+  background-color: rgba(255, 255, 255, 0.763);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.loader_inative{
+  display: none;
+}
+
+.loader_content img{
+  mix-blend-mode: multiply;
+  z-index: 6;
 }
 
 footer{

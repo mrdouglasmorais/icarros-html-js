@@ -7,6 +7,7 @@
   <title>ICarros HTML | Contato</title>
   <link rel="stylesheet" href="css/style.css">
   <script defer src="js/scrpt.js"></script>
+  <script defer src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
  <body>
   <header>
@@ -21,9 +22,33 @@
     </div>
   </header>
 
-  <div>
-
-  </div>
+    <div class="d_flex center_content section_contact">
+      <div>
+        <h1>Título 01</h1>
+      <p>Mussum Ipsum, cacilds vidis litro abertis. Suco de cevadiss deixa as pessoas mais interessantis.Mussum Ipsum, cacilds
+          vidis litro abertis. Suco de cevadiss deixa as
+          pessoas mais interessantis.Mussum Ipsum, cacilds vidis litro abertis. Suco de cevadiss deixa as pessoas mais interessantis.</p>
+      </div>
+    </div>
+    <form id="contact_form">
+      <h3> Entre em contato</h3>
+      <fieldset>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="user_name">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="user_email">
+        <label for="telephone">Telefone:</label>
+        <input type="telephone" id="phone" name="user_telephone">   
+      <label for="bio">Escreva sua mensagem:</label>
+        <textarea id="bio" name="message"></textarea>
+      </fieldset>
+      <button type="submit">Enviar mensagem :)</button>
+    </form>
+    <div id="loader" class="loader_inative">
+      <div class="loader_content">
+        <img src="img/loader.gif" alt="loader" class="loader_icon">
+      </div>
+    </div>
   <footer>
     <p>Todos os direitos reservados 2022</p>
   </footer>

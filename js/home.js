@@ -37,6 +37,27 @@ function getApiData(){
 
 getApiData();
 
+let allParameters = [];
+
+let parameters = document.querySelector('#parameters')
+function getParaters(){
+  axios.get(baseURL + 'parameters').then(
+    res => {
+      allParameters = res.data
+      parameters.innerHTML = `
+        ${allParameters.map( item => ( `
+          <input type="radio" value="${item.title}" >
+          <label>${item.title}</label>
+          <br/>
+          `)
+        ).join('')}
+      `
+    }
+  )
+}
+
+getParaters();
+
 // send api function
 findForm.addEventListener('submit', function(e) {
   e.preventDefault();
